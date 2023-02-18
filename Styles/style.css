@@ -1,0 +1,129 @@
+body{background-color: pink;
+height: 100vh;
+width: 100vw;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+}
+*{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    /* font-family: ; */
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+li{
+    list-style: none;
+    cursor: pointer;
+}
+a{
+    text-decoration: none;
+}
+button{
+    background-color: #2ae0a1;
+    padding: 4px 10px;
+    cursor: pointer;
+    color: white;
+    border: 1px solid wheat;
+    border-radius: 5px;
+    font-weight: 600;
+    width: fit-content;
+}
+button:hover{
+    background-color: wheat;
+    color: black;
+    border: 1px solid black;
+}
+nav{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+}
+nav.LOGO{
+    font-weight: 900;
+    font-size: 30px;
+}
+nav ul{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    font-weight: 500;
+}
+nav ul li:hover{
+    text-decoration: underline;
+    font-weight: 900;
+}
+.Search-Field{
+    display: flex;
+    gap: 30px;
+    
+}
+input{
+    padding: 4px 10px;
+}
+.Hero-Section{
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+}
+.Hero-Left-Section h1{
+    font-size: 40px;
+    margin-bottom: 20px;
+    font-weight: 700;
+
+}
+.Hero-Left-Section h1 span{
+    color: rgb(40, 233, 169);
+    font-weight: 700;
+    font-size: 2.5 rem ;
+}
+.Hero-Left-Section p{
+    font-weight: 500;
+}
+.Hero-Left-Section p span{
+    font-weight: 700;
+    font-size: 25px;
+    color: rgb(40, 233, 169);
+}
+.Hero-Right-Section{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    align-items: center;
+    justify-content: center;
+     gap: 30px; 
+}
+.Hero-Right-Section-Btn {
+    display: flex;
+     align-items: center; 
+    gap: 30px;
+}
+.Hero-Right-Section img{
+    height: 300px;
+    width: 300px;
+}
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+footer p{
+    font-weight: 600;
+}
+footer ul{
+    display: contents;
+    align-items: center;
+    gap: 30px;
+}
+ footer ul li a i:hover{
+    background-color: #f95445;
+    color: black;
+    font-weight: 900;
+
+} 
+footer ul li a i{
+    height: 20px;
+    width: 20px;
+}
