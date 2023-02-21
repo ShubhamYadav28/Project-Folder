@@ -1,0 +1,148 @@
+*{margin: 0;
+ padding: 0;
+ box-sizing: border-box ;
+}
+body{
+    display: flex;
+       /* height: 100vh;
+    width: 100vw;   */
+    flex-direction: column;
+     justify-content: space-around;
+     background-color: rgb(10, 3, 19);
+    }
+    img:hover{
+        cursor: pointer;
+    }
+    .menu{
+        display: none;
+    }
+    .header{
+        display: flex;
+        flex-direction:row;
+          width: 100%;  
+          align-items: center; 
+        justify-content: space-between;
+        color: white;
+        }
+    .list{display: flex;
+        list-style: none;
+        cursor: pointer;
+        gap: 20px;
+        margin-top: 10px;
+    }
+    .list li button{
+        background-color: rgb(121, 71, 240);
+            padding: 5px 5px;
+            font-size: 14px;
+            cursor: pointer;
+            color: white;
+            width: fit-content;
+            border: none;
+            border-radius: 5px;
+    }
+    .top-section{
+        max-width: 100vw;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+    .bottom-section{
+        margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    }
+    .project{
+        display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+    row-gap: 20px;
+     column-gap: 20px; 
+    }
+    .text{
+        height: 150px;
+        width: 300px;
+    }
+    .text img{
+        display: inline;
+        height: 20px;
+        width: 20px;
+    }
+    .text h1{
+        display: inline;
+        color: white;
+        font-size: 20px;
+    }
+    .font-size{
+        font-size: 40px;
+    }
+    .font-color{
+        color: gold;
+    }
+    .top-section{
+        display: flex;
+    }
+    .pc-image img{
+        height: 400px;
+        width: 400px;
+    }
+    .image{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+      .image img{
+        width: 200px;
+        height: 200px;
+      }
+    .image p{
+        color: white;
+    }
+    .footer{
+        display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    }
+    .footer img{
+        height: 20px;
+        width: 20px;
+        margin-bottom: 20px;
+    }
+    .heading2 h2{
+        color: white;
+        text-decoration: underline 3px blue;
+        text-align: center;
+        margin: 20px 0px;
+    }
+@media screen and (max-width:576px) {
+    .list li{
+        display: none;
+    }
+    .menu{
+        display: block;
+    }
+    .menu img{
+        width: 20px;
+        height: 20px;
+        margin-left: 10px;
+    }
+    .top-section{
+        display: flex;
+        flex-direction: column;
+    }
+    .project{
+        display: grid;
+        grid-template-columns: 1fr;
+        align-items: center;
+        justify-content: center;
+        row-gap: 20px;
+        column-gap: 20px;
+    }
+}    
+
+    
