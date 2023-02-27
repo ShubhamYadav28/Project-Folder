@@ -1,0 +1,321 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: whitesmoke;
+    font-family: 'Poppins', sans-serif;
+}
+/* Top Section */
+/* Navigation */
+.top-sec nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: antiquewhite;
+    padding: 20px 15% 15px 10% ;
+
+}
+.top-sec nav ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+    list-style: none;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 600;
+}
+nav img{
+    margin-top: 20px;
+}
+.horizontal-divider{
+    width: 85vw;
+    height: 3px;
+    margin: 10px 8% 10px 7%;
+    background-color: antiquewhite;
+}
+/* top section content */
+.ts-content{
+    margin-top: 75px;
+     margin-left: 10%;
+}
+.ts-content h1{
+    font-size: 80px;
+    font-weight: 500;
+    line-height: 1.2em;
+    color: white;
+}
+.ts-content p{
+    color: antiquewhite;
+    padding: 20px 0px;
+    font-size: 18px;
+}
+.ts-content button{
+    padding: 12px 30px;
+    border-radius: 20px;
+    background-color: rgb(80, 82, 208);
+    color: white;
+    border: none;
+    font-size: 18px;
+    font-weight: 600;
+}
+/* Section 1 */
+/* LOGO name */
+.logo-name{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 90vw;
+    height: 180px;
+    margin-left: 70px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 30px;
+    position: relative;
+    top: -90px;
+}
+.sec-1{
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+}
+/* Section 2 */
+.sec-2{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 80px;
+}
+/* card position */
+.card{
+    margin-bottom: 100px;
+}
+.card2{
+    position: relative;
+    top: 40px;
+}
+.card3{
+    position: relative;
+    top: 80px;
+}
+.card5{
+    position: relative;
+    top: -40px;
+}
+.card6{
+    position: relative;
+    top: -80px;
+}
+.card7{
+    position: relative;
+    top: -160px;
+}
+.card8{
+    position: relative;
+    top: -120px;
+}
+.card9{
+    position: relative;
+    top: -80px;
+}
+/* Card detail */
+.card-img{
+    height: 60vh;
+    width: 30vw;
+    border-radius: 25px;
+}
+.card-dtl{
+    display: flex;
+    width: 25vw;
+    align-items: center;
+    justify-content: space-between;
+    height: 100px;
+    position: relative;
+    left: 40px;
+    top: -50px;
+    background-color: white;
+    border-radius: 15px;
+}
+.card-dtl div{
+    display: flex;
+    flex-direction: column;
+    line-height: 2em;
+    margin-left: 15px;
+}
+.card-dtl button{
+    padding: 12px 28px;
+    background-color: rgb(141, 71, 240);
+    border-radius: 20px;
+    color: white;
+    font-weight: 600;
+    font-size: 18px;
+    border: none;
+    margin-right:15px ;
+}
+.card-dtl p{
+    color: rgb(96, 83, 240);
+    font-weight: 600;
+}
+/* Early bird book */
+
+.feat-img{
+    height: 500px;
+    width: 500px;
+    border-radius: 50px;
+}
+.modern{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 50px;
+    width: 100vw;
+}
+.modern div{
+    height: 400px;
+    width: 530px;
+    margin-right: 250px;
+}
+.unique{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 100px;
+    width: 100vw;
+}
+.unique div{
+    height: 400px;
+    width: 500px;
+    margin-left: 300px;
+}
+.unique div h1,
+.modern div h1{
+    font-size: 60px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+.unique div p,
+.modern div p{
+    font-size: 20px;
+    font-weight: 500;
+}
+.unique div button,
+.modern div button{
+    padding: 10px 22px;
+    background-color: rgb(130, 65, 236);
+    color: white;
+    border-radius:15px ;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    margin-top: 30px;
+}
+/* Position feature images */
+.feat-img1{
+    position: absolute;
+    left: 145px;
+    margin-bottom: 185px;
+    
+    
+}
+.feat-img2{
+    position: absolute;
+    right: 130px;
+    margin-bottom: 185px;
+}
+/* Section 4 */
+.sec-4{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 80vw;
+    height: 70vh;
+    margin-top: 100px;
+    margin-left: 150px;
+    border-radius: 50px;
+    background-color: rgb(126, 92, 248);
+}
+.sec-4 form{
+    display: flex;
+    align-items: center;
+    padding: 20px 100px;
+    gap: 30px;
+}
+.sec-4 h1{
+    font-size: 70px;
+    margin-top: 60px;
+    color: white;
+    font-weight: 600;
+}
+.sec-4 p{
+    font-size: 18px;
+    width: 40vw;
+    margin-top: 30px;
+    text-align: center;
+    color: white;
+}
+.sec-4 form div{
+    display: flex;
+    align-items: center;
+    border: 1px solid black;
+    width: 28vw;
+    height: 50px;
+    background-color: rgb(85, 39, 238);
+    padding-left: 10px;
+    border-radius: 25px;
+    border: none;
+}
+.sec-4 form div input{
+    background-color: transparent;
+    border: none;
+    padding-left: 10px;
+    font-size: 16px;
+}
+.sec-4 button{
+    padding:15px 28px ;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 25px;
+    background-color: white;
+    border: none;
+    color: rgb(20, 103, 237);
+}
+/* Footer */
+
+footer {
+    display: flex;
+    margin: 150px; 
+    justify-content: space-between;
+    
+}
+.ft-logo{
+    display: flex;
+    flex-direction:column ;
+    align-items: flex-start;
+    justify-content: space-around;
+    width: 320px;
+    line-height: 20px;
+}
+.social-logo{
+    display: flex;
+    gap: 30px;
+    margin: 10px;
+}
+.ft-menu{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 40vw;
+}
+.ft-menu  ul li:first-child {
+    font-weight: 700;
+}
+footer ul{
+    list-style: none;
+    cursor: pointer;
+    font-size: 18px;
+    line-height: 40px;
+}

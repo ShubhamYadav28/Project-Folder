@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'IBM Plex Sans', sans-serif;
+font-family: 'Poppins', sans-serif;
+}
+body{
+    background-color: whitesmoke;
+}
+/* Navigation */
+nav{
+    display: flex;
+    padding:20px 10%;
+    align-items: center;
+    justify-content: space-between;
+}
+nav img{
+    width: 150px;
+}
+nav ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    font-weight: 600;
+    gap: 50px;
+}
+a {
+    text-decoration: none;
+    color: black;
+  }
+  /* Main Section */
+  section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30vh;
+  }
+  section h1{
+    color: rgb(15, 219, 154);
+    font-size: 30px;
+  }
+ .pera{
+    width: 680px;
+    padding: 20px 0px 40px ;
+    text-align: center;
+ }
+ .card{
+    display: flex;
+    align-items: center;
+    width: 700px;
+    justify-content: space-between;
+ }
+ .card div{
+    text-align: center;
+    line-height: 1.8em;
+    border-radius: 10px;
+  box-shadow: 0 0 10px black;
+ }
+ .card div h2{
+    color: rgb(15, 219, 154);
+ }
+ .card div p{
+    font-weight: 600;
+    font-size: 18px;
+ }
+ .card div:nth-child(1){
+    padding: 20px 60px;   
+ }
+ .card div:nth-child(2){
+    padding: 20px 45px;  
+ }
+ .card div:nth-child(3){
+    padding: 20px 52px;
+ }

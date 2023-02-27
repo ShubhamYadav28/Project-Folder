@@ -1,0 +1,279 @@
+/* Universal selector */
+*{margin: 0;
+    padding: 0;
+    box-sizing: border-box ;
+    font-family: 'Poppins', sans-serif;
+   }
+body{
+    background-color: rgba(0, 0, 0, 0.941);
+}
+/* Header */
+/* Navigation */
+nav{
+    display: flex;
+    justify-content: space-around;
+}
+.main-left img{
+    width: 250px;
+    height: 500px;
+    position: absolute;
+    left: 400px;
+    top:0px ;
+}
+.beats-logo img{
+    margin-top: 40px;
+}
+.list{
+    display: flex;
+    color: white;
+    font-weight: 700;
+    list-style: none;
+    cursor: pointer;
+    gap: 50px;
+    margin-top: 40px;
+    align-items: center;
+}
+.list li button{
+    padding: 10px 30px;
+    border: 2px solid gray;
+    background-color: rgba(128, 128, 128, 0.153);
+    border-radius: 5px;
+    color: antiquewhite;
+}
+/* Header content */
+.main-right{
+    color: white;
+    height: 400px;
+    width: 270px;
+    margin-left: 55%;
+    padding: 100px 0px ;
+    line-height: 50px;
+    }
+.main-right div h1{
+    font-size: 50px;
+    font-weight: 700;
+}
+.main-right div h4{
+    font-size: 20px;
+    font-weight: 700;
+}
+.main-right div p{
+    line-height: 2em;
+}
+.main-right button{
+    display: flex;
+    width: fit-content;
+    gap: 20px;
+    align-items: center;
+    padding: 10px 15px;
+    border-radius: 10px;
+    color: antiquewhite;
+    background-color:rgba(128, 128, 128, 0.5);
+}
+/* Company LOGO */
+.media-logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 250px;
+}
+.media-logo ul{
+    display: flex;
+    justify-content: space-around;
+    gap: 100px;
+    align-items: center;
+}
+/* Hero Section */
+/* Specification */
+.specs-top{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+}
+.specs-bottom{
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+
+}
+.specs-content{
+    color: antiquewhite;
+    margin-left: 30%;
+}
+.specs-content div{
+    margin-bottom: 20px;
+}
+.specs-img{
+    margin-left: 50px;
+}
+.connection{
+     margin-left: 20%;
+}
+.microphones{
+    margin-left: 20%;
+}
+/* Case */
+.case-top{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+}
+.case-bottom{
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+
+}
+.mouse-img{
+    margin-left: 30%;
+    scale: 0.8;
+}
+.case-content{
+    color: antiquewhite;
+    width: 165px;
+    height: 250px;
+    margin-left: 30px;
+}
+.case-content button{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    padding: 10px 15px;
+    border-radius: 10px;
+    background-color: rgba(128, 128, 128, 0.219);
+    color: wheat;
+    margin-top: 20px;
+}
+/* Buy now */
+.buy-now{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 50px;
+    width: 60vw;
+    height: 45vh;
+    background-color: rgba(128, 128, 128, 0.16);
+    margin-left: 250px;
+    border-radius: 20px;
+}
+.bn-content{
+    color: antiquewhite;
+    height: 200px;
+    width: 210px;
+}
+.bn-content button{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    padding: 10px 15px;
+    border-radius: 10px;
+    background-color: black;
+    color: wheat;
+    margin-top: 20px;
+}
+/* Choose your style */
+/* HP = headphones */
+.HP img{
+    height: 120px;
+    width: 100px;
+    position: relative;
+    z-index: 100;
+    top: -40px;
+}
+.choose{
+    display: flex;
+    align-items: center;
+    margin-top: 100px;
+    scale: 0.6;
+}
+.style{
+    margin-left: 40%;
+}
+.style h4{
+    color: antiquewhite;
+}
+.style p{
+    color: antiquewhite;
+}
+/* pb = Product bottom */
+.pb{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    position: relative;
+    top: -20px;
+}
+.pb img{
+    padding: 20%;
+    background-color: black;
+    border-radius: 5px;
+}
+.pb h4{
+    font-size: 15px;
+}
+.p{
+    display: flex;
+    flex-direction: column;
+     align-items: center;
+     justify-content: center;
+    margin-top: 50px;
+    width: 150px;
+    height: 150px;
+    background-color: rgba(128, 128, 128, 0.16);
+    border-radius: 5px;
+    overflow: visible;
+}
+
+.product{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+/* Footer */
+footer{
+    display: flex;
+    color: antiquewhite;
+    justify-content: space-between;
+    margin-top: 100px;
+}
+footer li{
+    list-style: none;
+    cursor: pointer;
+}
+/* Subscribe button */
+.sub-btn{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 9px 8px;
+    background-color: rgba(128, 128, 128, 0.194);
+    gap: 100px;
+    border-radius:10px ;
+}
+.sub{
+    display: flex;
+    gap: 20px;
+padding: 8px 12px;
+background-color: black;
+border-radius: 5px;
+}
+.sub-logo ul{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-top: 30px;
+    margin-bottom: 100px;
+    }
+    .f-logo{
+        margin-left: 10%;
+    }
+    .f-errow img{
+        margin-right: 30px;
+    }
+    .f-products h2,
+    .f-support h2{
+        margin-bottom: 20px;
+    }

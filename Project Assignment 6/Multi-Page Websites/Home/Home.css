@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'IBM Plex Sans', sans-serif;
+font-family: 'Poppins', sans-serif;
+}
+body{
+    background-color: whitesmoke;
+}
+/* Navigation */
+nav{
+    display: flex;
+    padding:20px 10%;
+    align-items: center;
+    justify-content: space-between;
+}
+nav img{
+    width: 150px;
+}
+nav ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    font-weight: 600;
+    gap: 50px;
+}
+a {
+    text-decoration: none;
+    color: black;
+  }
+/* Left Section */
+.left-sec{
+    margin-left: 10vw;
+    margin-top: 10vh;
+}
+.left-sec h1{
+    font-size: 60px;
+    font-weight: 700;
+}
+.left-sec p{
+    color: rgba(0, 0, 0, 0.564);
+    padding: 10px 0px 20px 0;
+}
+.left-sec button{
+    padding: 12px 35px;
+    font-size: 18px;
+    border-radius: 20px;
+    font-weight: 600;
+    color: white;
+    background-color: rgb(9, 206, 140);
+    border: none;
+}
+.top-angle{
+    width: 25px;
+}
+.bottom-angle{
+    width: 25px;
+    position: relative;
+    left: 40vw;
+    bottom: 60px;
+}
+.mouse{
+ position: relative;
+ left: 41vw;
+ bottom: 15px;
+}
+
+/* Right Section */
+
+.right-sec img:first-child{
+    width: 600px;
+    position: absolute;
+    left: 25vw;
+    bottom: 8vh;
+
+}
+.right-sec img:nth-child(2){
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    height: 90%;
+ }
+.right-sec img:nth-child(3){
+   width: 30%;
+   position: absolute;
+   right: 0;
+   bottom: 50px;
+   z-index: -2;
+}
+.right-sec img:nth-child(4){
+    width: 25%;
+    position: absolute;
+    right: 0;
+    bottom: 40px;
+    z-index: -1;
+
+ }
