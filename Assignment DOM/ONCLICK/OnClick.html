@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OnClick Assignment</title>
+    <link rel="stylesheet" href="./OnClick.css">
+</head>
+<body>
+    <div id="container" onclick="woo()">
+        <p class="clickhere">Click Here</p>
+      </div>
+</body>
+<script>
+    function woo(){
+        document.getElementById('container').innerText = "Congratulation!";
+        document.getElementById('container').style.backgroundColor = "Blue";
+        document.getElementById('container').style.height = "50px";
+    }
+</script>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./DoubleClick.css" />
+    <title>OnDoubleClick Assignment</title>
+  </head>
+  <body>
+    <div id="box" ondblclick="yes()">
+      <p class="clickhere">Click here Twice</p>
+    </div>
+  </body>
+  <script>
+    function yes(){
+        document.getElementById('box').innerText = "Woo!";
+        document.getElementById('box').style.backgroundColor = "red";
+        document.getElementById('box').style.height = "50px";
+    }
+  </script>
+</html>

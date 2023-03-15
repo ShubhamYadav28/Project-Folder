@@ -1,0 +1,16 @@
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+#display {
+    color: green;
+  }
+  
+  #input-box {
+    font-size: 20px;
+    font-weight: 500;
+    border:2px solid blue;
+    padding: 10px;
+  }
