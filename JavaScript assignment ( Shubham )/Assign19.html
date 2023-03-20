@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validate Password</title>
+</head>
+<body>
+    <!-- HTML form -->
+<form id="login-form">
+    <label for="email-input">Email:</label>
+    <input type="text" id="email-input" name="email" required>
+    <br>
+    <label for="password-input">Password:</label>
+    <input type="password" id="password-input" name="password" required>
+    <br>
+    <input type="submit" value="Submit">
+  </form>
+  
+  <!-- Paragraph for error or success message -->
+  <p id="message"></p>
+  
+  
+  </body>
+  <script>
+    // Get form elements
+    const form = document.getElementById("login-form");
+    const emailInput = document.getElementById("email-input");
+    const passwordInput = document.getElementById("password-input");
+    const message = document.getElementById("message");
+  
+    // Add event listener to form submission
+    form.addEventListener("submit", (event) => {
+      event.preventDefault(); // Prevent form submission
+  
+      // Check email and password validity
+      const email = emailInput.value;
+      const password = passwordInput.value;
+  
+      if (!email.includes("@") || password.length < 8) {
+        // Display error message in red color
+        message.textContent = "Invalid email or password!";
+        message.style.color = "red";
+      } else {
+        // Display success message in green color
+        message.textContent = "Valid email and password!";
+        message.style.color = "green";
+  
+        // Clear input fields after 5 seconds
+        setTimeout(() => {
+          emailInput.value = "";
+          passwordInput.value = "";
+          message.textContent = "";
+        }, 5000);
+      }
+    });
+  </script>
+</html>
+
+<!-- In this implementation, we first get the form elements and add an event listener to the form submission event. When the user submits the form, we prevent the default submission behavior with event.preventDefault().
+We then check the email and password validity by getting their values from the input fields and using the includes() method and the < operator, respectively. If the input is invalid, we display an error message in red color using the textContent and style.color properties of the message paragraph element. If the input is valid, we display a success message in green color and clear the input fields after 5 seconds using the setTimeout() method.
+Note that we use the required attribute on the email and password input fields to ensure that they are not empty when the user submits the form. -->

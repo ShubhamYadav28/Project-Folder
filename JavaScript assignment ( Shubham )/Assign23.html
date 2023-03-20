@@ -1,0 +1,22 @@
+<!--  Change the color on click -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change color</title>
+</head>
+<body>
+    <button onclick="changeBackgroundColor()">Change background color</button>
+</body>
+<!-- JavaScript -->
+<script>
+const colors = ["blue", "green", "yellow", "purple", "gray", "black", "orange" ];
+
+function changeBackgroundColor() {
+  const randomColor = colors[Math.floor(Math.random() * colors.length)];
+  document.body.style.backgroundColor = randomColor;
+}
+</script>
+</html>

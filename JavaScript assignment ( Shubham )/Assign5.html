@@ -1,0 +1,39 @@
+ <!-- capitalize  -->
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Capitalizing first letter of name</title>
+</head>
+<body>
+	<h2>Enter your name:</h2>
+	<input type="text" id="nameInput" placeholder="Enter User Name">
+	<button onclick="capitalizeName()">Submit</button>
+	<p id="capitalizedName"></p>
+</body>
+<script>
+  function capitalizeName() {
+    var nameInput = document.getElementById("nameInput").value;
+    var regex = /^[a-zA-Z ]*$/; // Only allow alphabets and spaces
+    if (regex.test(nameInput)) { // Validate input
+      var firstLetter = nameInput.charAt(0);
+      var capitalizedFirstLetter = firstLetter.toUpperCase();
+      var capitalizedName = capitalizedFirstLetter + nameInput.slice(1);
+      document.getElementById("capitalizedName").innerText = capitalizedName;
+    } else {
+      document.getElementById("capitalizedName").innerText = "Invalid input! Please enter alphabets only.";
+    }
+  }
+</script>
+
+</html>
+
+
+<!-- We first create an HTML form that takes the user's name as input and a submit button.
+We then create a JavaScript function called capitalizeName which is triggered when the user clicks the submit button.
+Inside the function, we get the user's input using the getElementById method and store it in a variable called nameInput.
+We then use a regular expression to validate the input. In this example, we only allow alphabets and spaces. If the input is valid, we continue with capitalizing the first letter.
+We use the charAt method to get the first letter of the name and store it in a variable called firstLetter.
+We then use the toUpperCase method to capitalize the first letter and store it in a variable called capitalizedFirstLetter.
+We use the slice method to get the rest of the name after the first letter and store it in a variable called capitalizedName.
+Finally, we use the getElementById method to update the HTML content of the <p> tag with the id capitalizedName with the capitalized name.
+ -->

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Highlighting</title>
+</head>
+<body>
+    <p id="my-paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum quas magnam quia aspernatur nemo vitae nulla ratione? Quidem nostrum esse, assumenda, distinctio modi numquam nulla ullam labore explicabo deleniti perspiciatis totam quas fugiat et, molestias quo exercitationem autem. Voluptate, id? scarletts</p>
+ 
+</body>
+<script>
+const paragraph = document.getElementById("my-paragraph");
+const words = paragraph.innerText.split(" ");
+
+for (let i = 0; i < words.length; i++) {
+  const word = words[i];
+  if (word.length > 8) {
+    words[i] = `<span style="background-color: yellow;">${word}</span>`;
+  }
+}
+
+paragraph.innerHTML = words.join(" ");
+</script>
+</html>

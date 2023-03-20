@@ -1,0 +1,45 @@
+<!-- Remove Duplicates -->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Remove Duplicate Items from Cart</title>
+</head>
+<body>
+	<h1>Remove Duplicate Items from Cart</h1>
+	<p>Enter the items in your cart separated by commas:</p>
+	<textarea id="cartItems"></textarea>
+	<button onclick="removeDuplicates()">Remove Duplicates</button>
+	<p>Unique Items:</p>
+	<ul id="uniqueItems"></ul>
+
+	<script>
+		function removeDuplicates() {
+			// Get the input from the text area
+			const cartItemsString = document.getElementById("cartItems").value;
+			// Convert the input string to an array of items
+			const cartItems = cartItemsString.split(",");
+			// Use a Set to remove duplicates
+			const uniqueItemsSet = new Set(cartItems);
+			// Convert the Set back to an array and sort the items
+			const uniqueItems = Array.from(uniqueItemsSet).sort();
+			// Get the list element to display the unique items
+			const list = document.getElementById("uniqueItems");
+			// Clear any previous items in the list
+			list.innerHTML = "";
+			// Add each unique item to the list as a list item
+			uniqueItems.forEach(item => {
+				const li = document.createElement("li");
+				li.innerText = item;
+				list.appendChild(li);
+			});
+		}
+	</script>
+</body>
+</html>
+
+
+<!-- In this program, we first create an HTML page that contains a textarea for the user to input their cart items, a button to remove duplicates, and a list element to display the unique items. When the user clicks the "Remove Duplicates" button, the removeDuplicates() function is called.
+Inside the function, we get the input from the textarea and convert it to an array of items using the split() method. Then, we use a Set object to remove duplicates from the array. We convert the Set back to an array and sort the items alphabetically.
+Next, we get the list element from the HTML page and clear any previous items in the list. We then loop through the unique items and add each item to the list as a list item using the createElement() and appendChild() methods.
+You can test this program by running the HTML file in a web browser and entering a list of items with duplicates in the textarea. Click the "Remove Duplicates" button to see the resulting list of unique items. -->

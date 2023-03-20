@@ -1,0 +1,43 @@
+<!-- Dynamically Adding List Items to an Ordered List -->
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Dynamic List</title>
+</head>
+<body>
+	<h1>Dynamic List</h1>
+	<button onclick="addItem()">Add Item</button>
+	<ul id="list"></ul>
+	<script>
+		// Pre-existing array of list items
+		const items = ['Item 1', 'Item 2', 'Item 3', 'Item 4', 'Item 5'];
+
+		// Counter for keeping track of the next item to add
+		let count = 0;
+
+		// Function to add an item to the list
+		function addItem() {
+			// Check if there are remaining items
+			if (count >= items.length) {
+				alert('All items have been added!');
+				return;
+			}
+
+			// Get the list element
+			const list = document.getElementById('list');
+
+			// Create a new list item element
+			const newItem = document.createElement('li');
+
+			// Set the text of the new list item to the next item in the array
+			newItem.innerText = items[count];
+
+			// Increment the counter for the next item
+			count++;
+
+			// Append the new list item to the list
+			list.appendChild(newItem);
+		}
+	</script>
+</body>
+</html>
