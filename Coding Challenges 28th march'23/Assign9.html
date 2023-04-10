@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 9</title>
+</head>
+<body>
+    <h1>Hello! World</h1>
+    <!-- JS start -->
+    <script>
+      // Error Handling.  
+   fetch("https://jsonplaceholder.typicode.com/posts/123456789")
+   .then(response => {
+    if (!response.ok) {
+      throw new Error("Network response was not ok");
+    }
+    return response.json();
+  })
+  </script>
+    <!-- JS end -->
+</body>
+</html>
+
+<!-- In this program, we use the 'fetch' method to make a request to the API endpoint, and then use the 'then' method to handle the response.
+We first check if the response object has an 'ok' property, which indicates whether the response was successful or not. If the response was not successful, we throw an error with a descriptive message.
+If the response was successful, we parse the response body as JSON using 'response.json()', and then log the resulting data to the console using console.log(data).
+If there is an error during the request, we catch the error using the 'catch' method and log it to the console using console.error(error). -->
