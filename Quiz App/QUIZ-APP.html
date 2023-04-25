@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="./QUIZ-APP.css">
+</head>
+<!-- put styling in body -->
+<body style="background-color: black; color: azure;">
+    <h1>Javascript Quiz App</h1>
+<!-- through javascript we inject Quizes -->
+    <div id="quiz"></div>
+
+    <button id="submit">Submit</button>
+
+    <div id="results"></div>
+    <!-- JS start -->
+    <script>
+      // Taking refrences through getElementById(id) 
+        const quizContainer = document.getElementById('quiz')
+        const submitButton = document.getElementById('submit')
+        const resultsContainer = document.getElementById('results')
+
+        const myQuestions = [
+        {
+            question: "What is the capital of France?",
+            answers: {
+            a: "Paris",
+            b: "London",
+            c: "New York"
+            },
+            correctAnswer: "a"
+        },
+        {
+            question: "What is the largest country in the world?",
+            answers: {
+            a: "Russia",
+            b: "China",
+            c: "United States"
+            },
+            correctAnswer: "a"
+        },
+        {
+            question: "What is the currency of Japan?",
+            answers: {
+            a: "Yuan",
+            b: "Euro",
+            c: "Yen"
+            },
+            correctAnswer: "c"
+        }
+        ];
+    // +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+   // create functions buildQuiz() and showResults()
+        function buildQuiz(){
+            const output = []
+      // array.forEach(callbackFn(item, index, array))
+
+            myQuestions.forEach((currentQuestion, questionNumber) => {
+                const answers = []
+            // for (const key in object) {}
+                for(letter in currentQuestion.answers){
+                // The push() method adds the specified elements to the end of an array 
+                    answers.push(
+                        // <label> elements are simple inline elements and associate a <label> element with an <input> element
+                        `<label><input type="radio" name="question${questionNumber}" value="${letter}" />${letter} :${currentQuestion.answers[letter]}</label>
+                        `
+                    )
+                }
+                //console.log(answers);
+                output.push(
+                    `<div class="question">${currentQuestion.question}</div>
+                    <div class="answers">${answers.join('')}</div>
+                    `//The join() method creates and returns a new string by concatenating all of the elements in an array.
+                )
+            })
+            // console.log(output);
+            // The Element property innerHTML gets or sets the HTML markup contained within the element.
+            quizContainer.innerHTML = output.join('')
+        }
+// +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+        function showResults(){
+            const answerContainers = quizContainer.querySelectorAll('.answers')
+
+            let numCorrect = 0
+
+            myQuestions.forEach((currentQuestion, questionNumber) => {
+                //find selected answer
+                const answerContainer = answerContainers[questionNumber]
+                // input[name=question1]:checked
+                const selector = `input[name=question${questionNumber}]:checked`;
+                const userAnswer = (answerContainer.querySelector(selector) || {}).value
+
+                if (userAnswer === currentQuestion.correctAnswer) {
+                    numCorrect++
+                    answerContainers[questionNumber].style.color = 'green'
+
+                } else {
+                    answerContainers[questionNumber].style.color = 'red'
+                }
+            })
+        
+            resultsContainer.innerHTML = `${numCorrect} out of ${myQuestions.length}`
+        }
+//+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+// Run function buildQuiz()
+        buildQuiz()
+// In this code, showResults() is a listener for 'click' events registered using addEventListener()
+        submitButton.addEventListener('click', showResults)
+
+    </script>
+</body>
+</html>
+
